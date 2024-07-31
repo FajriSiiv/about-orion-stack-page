@@ -20,7 +20,7 @@ const props = defineProps({
     :class="[
       'py-2.5 px-6 rounded-md text-sm relative overflow-hidden group ',
       border ? 'border border-secondary text-secondary' : 'text-white',
-      bgColor ? 'bg-primary' : 'bg-white',
+      bgColor ? 'bg-primary' : 'bg-white !text-secondary',
     ]"
   >
     <span class="z-10 relative">
@@ -28,7 +28,7 @@ const props = defineProps({
     </span>
     <div
       :class="[
-        'absolute h-40 w-40 rounded-full -translate-x-1/2 left-1/2 top-10 group-hover:-top-full transition-all duration-500',
+        'absolute h-44 w-44 rounded-full -translate-x-1/2 left-1/2 top-20 group-hover:-top-full transition-all duration-500',
         bgColor ? 'bg-secondary' : 'bg-emerald-300',
       ]"
     ></div>
