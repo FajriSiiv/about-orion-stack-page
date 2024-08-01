@@ -33,7 +33,7 @@ const linkUL = ref([
     class="pt-40 pb-10 bg-secondary text-white mt-20 relative overflow-hidden"
   >
     <Section>
-      <div class="flex justify-between">
+      <div class="flex justify-between lg:flex-col lg:gap-y-10">
         <div class="flex gap-5 flex-wrap max-w-[250px] h-fit">
           <div
             class="border-1 border-white border p-2 rounded-md h-fit"
@@ -43,7 +43,9 @@ const linkUL = ref([
             <v-icon :name="`fa-${item}`" scale="1.2" />
           </div>
         </div>
-        <div class="flex justify-between items-start max-w-[600px] w-full">
+        <div
+          class="flex justify-between items-start max-w-[500px] w-full md:flex-wrap md:gap-y-5"
+        >
           <ul
             v-for="(item, index) of linkUL"
             :key="index"
@@ -72,5 +74,9 @@ const linkUL = ref([
         </div>
       </div>
     </Section>
+    <div class="px-5 h-[100px] flex justify-end items-center flex-col">
+      <span> &copy;Built by Muhammad Fajri. </span>
+      <a href="https://github.com/FajriSiiv" class="underline">Github</a>
+    </div>
   </footer>
 </template>

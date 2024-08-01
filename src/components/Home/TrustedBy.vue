@@ -48,11 +48,13 @@ onUnmounted(() => {
 
 <template>
   <Section>
-    <div class="flex gap-x-2">
+    <div class="flex gap-x-2 md:flex-col md:gap-y-10">
       <div class="flex-1">
-        <h2 class="font-['Laila'] text-7xl">Trusted by many</h2>
+        <h2 class="font-['Laila'] text-7xl md:text-3xl font-bold">
+          Trusted by many
+        </h2>
       </div>
-      <div class="flex-1 max-w-[510px]">
+      <div class="flex-1 max-w-[510px] md:text-sm">
         <span class="text-lg"
           >30,000+ agents and hundreds of brokerages have chosen HomeStack as
           their go-to mobile specialist.</span

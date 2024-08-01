@@ -6,10 +6,12 @@ import Section from "../Section.vue";
 <template>
   <Section>
     <div
-      class="bg-stone-400/20 h-[800px] rounded-3xl mb-5 overflow-hidden relative"
+      class="bg-stone-400/20 h-[800px] rounded-3xl mb-5 overflow-hidden relative md:h-fit"
     >
-      <div class="w-full h-full flex gap-x-6 py-24 px-10 relative z-10">
-        <div class="flex-[1] min-w-[320px]">
+      <div
+        class="w-full h-full flex gap-x-6 py-24 px-10 relative z-10 lg:flex-col md:p-10"
+      >
+        <div class="flex-[1] min-w-[320px] lg:flex-[0] lg:mb-5">
           <h2 class="text-5xl font-semibold font-['Laila'] text-nowrap mt-10">
             Our Story
           </h2>
@@ -17,10 +19,10 @@ import Section from "../Section.vue";
 
         <div class="flex-[3] flex flex-col gap-y-10">
           <div
-            class="max-w-[900px] max-h-[400px] h-full bg-slate-800 rounded-lg"
+            class="max-w-[900px] max-h-[400px] h-full bg-slate-800 rounded-lg md:min-h-[300px]"
           ></div>
 
-          <div class="flex flex-col gap-y-4 text-[20px]">
+          <div class="flex flex-col gap-y-4 text-[20px] lg:text-base">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
               adipisci?

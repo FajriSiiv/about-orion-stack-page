@@ -4,7 +4,7 @@ import Section from "../Section.vue";
 
 <template>
   <Section class="py-40">
-    <h2 class="font-['Laila'] text-7xl font-semibold">
+    <h2 class="font-['Laila'] text-7xl font-semibold md:text-3xl">
       The values that drive us
     </h2>
 

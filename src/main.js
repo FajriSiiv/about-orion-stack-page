@@ -9,13 +9,16 @@ import { OhVueIcon, addIcons } from "oh-vue-icons";
 import * as FaIcons from "oh-vue-icons/icons/fa";
 import * as LaIcons from "oh-vue-icons/icons/la";
 import * as IoIcons from "oh-vue-icons/icons/io";
+import * as HeroIcons from "oh-vue-icons/icons/hi";
 
 const Fa = Object.values(FaIcons);
 const La = Object.values(LaIcons);
 const Io = Object.values(IoIcons);
+const Hi = Object.values(HeroIcons);
 addIcons(...Fa);
 addIcons(...La);
 addIcons(...Io);
+addIcons(...Hi);
 
 const app = createApp(App);
 app.component("v-icon", OhVueIcon);
